@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{%load static%}
+
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+ 
+
+    <style>
+      .my_container {
+        background-color: rgb(24, 9, 243);
+      }
+      .heading1 {
+        padding-top: 5rem;
+      }
+      .image1 {
+        padding-bottom: 5rem;
+      }
+      .my_container2 {
+        background-color: bisque;
+      }
+      .para3 {
+        font-size: small;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .heading2 {
+        /* font-size: large; */
+        font-family:'Times New Roman', Times, serif;
+        padding-top: 5rem;
+      }
+      .h5{
+               /* font-size:medium; */
+               font-family: 'Times New Roman', Times, serif;
+      }
+      .s1 img {
+        max-width: 15%;
+        margin: 15px;
+      }
+      /* .accenture{
+        margin-bottom: 15px;
+      } */
+      
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="container-fluid my_container">
+{% include 'navbar.html' %}
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-4 heading1 ps-5 text-white fw-bold fs-2">
+            <p>Hi!</p>
+            <p>WE CREATE APP</p>
+            <p>DEVELOPMENT</p>
+          </div>
+          <div class="col-8 image1 pt-5">
+            {% comment %} <img src="456.png" class="rounded mx-auto d-block" alt="....." /> {% endcomment %}
+            <img src="{% static '/images/456.png' %}" class="rounded mx-auto d-block" alt="....." />
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid my_container2">
+      <div class="container2">
+        <div class="row">
+          <div class="col-md-6 image1 pt-5">
+            <img src="{% static '/images/123.png'%}" class="rounded mx-auto d-block" alt="....." />
+          </div>
+
+          <div class="col-md-6 heading2 fw-bolder fs-3">
+            <p>We think</p>
+            <p>another way</p>
+            <p class="h4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+            officiis, voluptate harum culpa assumenda, beatae maiores quaerat
+            expedita iste vero ullam non soluta necessitatibus. Provident
+            nesciunt repellat saepe aperiam illum.
+          </p>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2 ">
+         
+        </div>
+        <div class="col-sm-8 text-center ">
+          <p class="h3 mt-3">Our Clients</p>
+          <div class="s1">
+          {% comment %} <img src="cognizant-new-20223302-removebg-preview.png" alt=""> {% endcomment %}
+          <img src="{% static '/images/cognizant-new-20223302-removebg-preview.png'%}" alt="">
+          <img src="{% static '/images/125.png'%}" alt="">
+          <img class="accenture" src="{% static '/images/Accenture-logo-removebg-preview.png'%}" alt="">
+          </div>
+        </div>
+        <div class="col-sm-2 ">
+          
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
+
+
+
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+{% block title %}Home{% endblock title %}

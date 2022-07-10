@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container-sm w-50 pt-5">
+    <div class="text-center">
+<form method='post' action="">
+    {% csrf_token %}
+    <input type="text" class='form-control' name="username" placeholder="username"> <br>
+    <input type="text" class='form-control' name = "password" placeholder="password"> <br>
+    <button class="btn btn-lg btn-warning">Login</button>
+</form>
+</div>
+</div>
+
+{% endblock content %}
+
+
+
+
+
+
+{% block title %}
+
+Login
+
+{% endblock title%}

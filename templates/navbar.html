@@ -1,0 +1,43 @@
+{% comment %} <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Brogrammers</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="{% url 'home' %}">Home <span class="sr-only"></span></a>
+        <a class="nav-item nav-link" href="{% url 'contact' %}">Contact Us</a>
+        <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
+      </div>
+    </div>
+  </nav> {% endcomment %}
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fw-bold" href="#">DTFG</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNavAltMarkup"
+      >
+        <div class="navbar-nav">
+          <a class="nav-link active text-white" aria-current="page" href="{%url 'home'%}"
+            >Home</a
+          >
+          <a class="nav-link text-white" href="{% url 'contact'%}">Contact</a>
+          <a class="nav-link text-white" href="#">Pricing</a>
+          <a class="nav-link text-white" href="{% url 'login'%}">login</a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
